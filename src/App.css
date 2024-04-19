@@ -40,7 +40,7 @@ p {
 }
 .app {
   min-height: 100vh;
-  background-image: url('../public/assets/fondo2.png');
+  background-image: url(../public/assets/fondo3.png);
   background-position: center;
   background-size: cover;
 

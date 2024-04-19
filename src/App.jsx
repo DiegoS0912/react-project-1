@@ -10,13 +10,12 @@ import bgArray from './utils/bgArray.json';
 function App() {
 
   const sentence = randomIndex(phrases);
-  const bgIndex = randomIndex(bgArray);
   
   const [quote, setQuote] = useState(sentence);
-  const [bgApp, setBgApp] = useState(bgIndex);
+  const [bgApp, setBgApp] = useState(randomIndex(bgArray));
 
   const bgStyle = {
-    backgroundimage: `url('../assets/fondo${bgApp}.png')`,
+    backgroundImage: `url('../public/assets/fondo${bgApp}.png')`,
   }
 
   return (
