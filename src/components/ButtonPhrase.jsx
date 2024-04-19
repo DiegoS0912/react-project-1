@@ -6,11 +6,10 @@ import bgArray from '../utils/bgArray.json';
 const ButtonPhrase = ({setQuote, setBgApp}) => {
 
     const handleButton = () => {
-        // const bgIndex = randomIndex(bgArray);
+        const bgIndex = randomIndex(bgArray);
         const sentence = randomIndex(phrases);
         setQuote(sentence);
-        // setBgApp(bgIndex); 
-        setBgApp(randomIndex(bgArray));
+        setBgApp(bgIndex); 
     }
   
   return (
